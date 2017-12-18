@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>OurBook</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+
+        <!-- Main Style Sheet -->
+        <link rel="stylesheet" href="css/autocomplete.css">
+        <link rel="stylesheet" href="js/layui/css/layui.css">
+        <link rel="stylesheet" href="css/combo.select.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- <link rel="stylesheet" type="text/css" href="./static/css/index.css" /> -->
+        <!-- Modernizr -->
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!-- Respond.js for IE 8 or less only -->
+        <!--[if (lt IE 9) & (!IEMobile)]>
+            <script src="js/vendor/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body class="homepage" data-spy="scroll" data-target=".navbar">
+        <!--[if lte IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header role="banner">
+        <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Bootstrappin'" width="120"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#welcome">欢迎</a></li>
+                <li><a href="#features">旧书</a></li>
+                <li><a href="#impact">影响</a></li>
+                <li><a href="#books">HOT</a></li>
+                <li><a href='#' id="category">分类</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown ">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">menu<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li>&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon fa fa-user fa-lg"></i>
+                        <span><a href="register.php" style="display:inline;">注册</a></span>
+                        <span><a href="login.php" style="display:inline;" id="login">登录</a></span></li>
+                      <li class="userInfo" id="userInfo"><a href="#">个人信息</a></li>
+                      <li><a href="login_out.php" id="login_out">退出登录</a></li>
+                      <li class="divider"></li>
+                    </ul>
+                </li>
+              </ul>
+
+            </div><!--/.nav-collapse -->
+          </div><!--/.container -->
+        </nav>
+    </header>
+
+    <main role="main">
+
+      <!-- INTRO SECTION -->
+      <section id="welcome" class="jumbotron">
+        <div class="container">
+          <!-- Search -->
+
+          <div class="welcome-message">
+          <h1><strong>Hey</strong>your books</h1>
+          <p>在这里管理你的<em>旧书</em>并与千万学子一同交流，找到当初阅读的感动。
+          <a href="#features"
+          class="btn btn-lg btn-primary pull-right">Learn more
+          <span class="icon fa fa-arrow-circle-down"></span></a></p>
+          </div><!-- /.welcome-message -->
+        </div>
+      </section>
+      <div class="wrapper">
+        <div id="search-form"></div>
+      </div>
+      <!-- FEATURES SECTION -->
+      <section id="features">
+        <div class="container">
+          <h1>旧书</h1>
+          <div class="row">
+            <div class="features-item col-md-4 col-sm-6">
+              <span class="icon fa fa-jpy"></span>
+              <h2>便宜</h2>
+              <p>旧书的价格往往是新书的十分之一</p>
+            </div>
+            <div class="features-item col-md-4 col-sm-6">
+              <span class="icon fa fa-coffee"></span>
+              <h2>书香味浓</h2>
+              <p>真正的旧书都散发着淡淡的墨香</p>
+            </div>
+            <div class="features-item col-md-4 col-sm-6">
+              <span class="icon fa fa-graduation-cap"></span>
+              <h2>纯朴</h2>
+              <p>喂养了我们的思想，纯洁着我们的精神</p>
+            </div>
+            <div class="features-item col-md-4 col-sm-6">
+              <span class="icon fa fa-flag"></span>
+              <h2>传统</h2>
+              <p>那些美好的规则、训诫理应很好的传承</p>
+            </div>
+            <div class="features-item col-md-4 col-sm-6">
+              <span class="icon fa fa-heart"></span>
+              <h2>不忘本</h2>
+              <p>列宁说过，忘记过去就意味着背叛</p>
+            </div>
+            <div class="features-item col-md-4 col-sm-6">
+              <span class="icon fa fa-group"></span>
+              <h2>共享</h2>
+              <p>书籍是人类智慧的结晶，在这可以共享你的书籍</p>
+            </div>
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </section><!-- /.row -->
+
+      <!-- IMPACT SECTION -->
+      <section id="impact">
+        <div class="container">
+          <h1>影响</h1>
+          <div class="reviews js-masonry" data-masonry-options='{"itemSelector":".hreview"}'>
+            <div class="hreview review-item-1 thumbnail col-sm-6 col-md-4">
+              <img src="img/smiling1-by-RomainGuy-600x900.jpg" alt="Customer Photo1">
+              <div class="caption">
+                <blockquote class="description"><p>我在这里买到旧书，让我越阅读越漂亮。</p></blockquote>
+                <p class="reviewer">Jessica</p>
+              </div><!-- /.caption -->
+            </div><!-- /.hreview -->
+            <div class="hreview review-item-2 thumbnail col-sm-6 col-md-4">
+              <img src="img/smiling2-by-Christopher-Connell-600x400.jpg" alt="Customer Photo2">
+              <div class="caption">
+                <blockquote class="description"><p>在这里，我找到了失去联系多年的笔友</p></blockquote>
+                <p class="reviewer">笔友</p>
+              </div><!-- /.caption -->
+            </div><!-- /.hreview -->
+            <div class="hreview review-item-3 thumbnail col-sm-6 col-md-4">
+              <img src="img/smiling3-by-BerkDDemir-600x900.jpg" alt="Customer Photo3">
+              <div class="caption">
+                <blockquote class="description"><p>同学们，来跟我一起共享书籍吧！</p></blockquote>
+                <p class="reviewer">艾布特</p>
+              </div><!-- /.caption -->
+            </div><!-- /.hreview -->
+            <div class="hreview review-item-4 thumbnail col-sm-6 col-md-4">
+              <img src="img/smiling4-by-Trung-Hieu-600x400.jpg" alt="Customer Photo4">
+              <div class="caption">
+                <blockquote class="description"><p>随时随地，跟你交易书籍</p></blockquote>
+                <p class="reviewer">艾琳娜</p>
+              </div><!-- /.caption -->
+            </div><!-- /.hreview -->
+            <div class="hreview review-item-5 thumbnail col-sm-6 col-md-4">
+              <img src="img/smiling5-by-Ali-Burcin-Titizel-600x900.jpg" alt="Customer Photo5">
+              <div class="caption">
+                <blockquote class="description"><p>我非常幸运地在这里遇见那些优秀的阅读者</p></blockquote>
+                <p class="reviewer">戴里克</p>
+              </div><!-- /.caption -->
+            </div><!-- /.hreview -->
+            <div class="hreview review-item-6 thumbnail col-sm-6 col-md-4">
+              <img src="img/smiling6-by-Keith-Williamson-600x400.jpg" alt="Customer Photo6">
+              <div class="caption">
+                <blockquote class="description"><p>不管怎么说，它让我爱上了阅读</p></blockquote>
+                <p class="reviewer">克雷格尔</p>
+              </div><!-- /.caption -->
+            </div><!-- /.hreview -->
+            <div class="hreview review-item-7 thumbnail col-sm-6 col-md-4">
+              <img src="img/smiling7-by-Victor1558-600x400.jpg" alt="Customer Photo7">
+              <div class="caption">
+                <blockquote class="description"><p>旧书让我找到了当初看书的感动</p></blockquote>
+                <p class="reviewer">马克·艾文</p>
+              </div><!-- /.caption -->
+            </div><!-- /.hreview -->
+          </div><!-- /.reviews -->
+        </div><!-- /.container -->
+      </section><!-- /#impact -->
+
+      <!-- books SECTION -->
+      <section id="books">
+        <div class="container">
+          <h1>HOT</h1>
+          <div class="row" id="row">
+
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </section><!-- /.row -->
+
+      <!-- signup SECTION -->
+      <!-- <section id="signup">
+        <div class="container">
+          <h1>分类</h1>
+            <div class="jq22 col-md-3 " >
+              <select >
+                <option value="" id="school">仅支持以下学校</option>
+                <option value="哈佛大学">哈佛大学</option>
+                <option value="东京大学">东京大学</option>
+                <option value="清华大学">清华大学</option>
+                <option value="耶鲁大学">耶鲁大学</option>
+                <option value="中山大学">中山大学</option>
+                <option value="复旦大学">复旦大学</option>
+                <option value="同济大学">同济大学</option>
+                <option value="中山大学新华学院">中山大学新华学院</option>
+              </select>
+            </div> -->
+            <!-- <div class="jq22 col-md-3 ">
+              <select id="grade">
+                <option value="">仅支持以下年级</option>
+                <option value="一月">大一</option>
+                <option value="二月">大二</option>
+                <option value="三月">大三</option>
+                <option value="三月">大四</option>
+              </select>
+            </div>
+            <div class="jq22 col-md-3 " >
+              <select class="subject">
+                <option value="">仅支持以下专业</option>
+                <option value="一月">会计学</option>
+                <option value="二月">软件工程</option>
+                <option value="三月">计算机科学</option>
+                <option value="三月">经济学</option>
+                <option value="三月">服装设计</option>
+                <option value="三月">土木工程</option>
+                <option value="三月">金融工程</option>
+              </select>
+            </div> -->
+            <!-- <div class="col-md-3" id="find">
+              <a
+              class="btn btn-lg btn-primary pull-left">
+              找到你的梦想<span class="icon fa fa-search"></span></a>
+            </div>
+
+        </div>
+      </section> -->
+
+    </main>
+
+    <footer role="contentinfo">
+      <h3>联系我们</h1>
+        <p><a href="index.html"><img src="img/logo.png" width="80" alt="Bootstrappin&#39;"></a></p>
+        <ul class="social">
+        <li><a href="#" title="Twitter Profile"><span class="icon fa fa-twitter"></span></a></li>
+        <li><a href="#" title="Facebook Page"><span class="icon fa fa-facebook"></span></a></li>
+        <li><a href="#" title="LinkedIn Profile"><span class="icon fa fa-linkedin"></span></a></li>
+        <li><a href="#" title="Google+ Profile"><span class="icon fa fa-google-plus"></span></a></li>
+        <li><a href="#" title="GitHub Profile"><span class="icon fa fa-github-alt"></span></a></li>
+        </ul>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <!-- <script src="js/vendor/jquery.js"></script> -->
+    <script src="js/combo.select.js"></script>
+    <script src="js/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/autocomplete.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

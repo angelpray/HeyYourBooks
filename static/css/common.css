@@ -1,0 +1,24 @@
+*{margin:0px; padding:0;}
+body{font-size:14px;font-family:"microsoft YaHei"; background:#f4f5f7; }
+a{ text-decoration:none; }
+a:hover{text-decoration:underline;}
+.fl{float:left;}
+.fr{float:right;}
+
+.header{overflow: hidden; width:1200px; height: 80px; margin:25px auto 0 auto;background-color: #337ab7}
+.header .logo{width:300px; float:left;}
+.header .logo img{width:150px;height:80px;}
+.header .auth{ float:right;}
+.header ul{list-style: none;overflow: hidden;line-height:60px; }
+.header ul li{float:left;margin-right:0px;}
+.header ul li a{color:#000; }
+
+.content{width: 1200px; height:auto; margin: 0 auto; margin-top:20px; }
+
+.footer { height:88px; margin:60px auto 0 auto; width:1200px; border-top:1px solid #CCC; overflow:hidden; clear: both}
+.footer p{text-align: center;line-height: 88px;margin:0px;}
+.footer p span{color:#f96972;}
+.auth .btn{border-radius: 0px;border:none;height: 80px;}
+.header .col-lg-6{margin-top: 20px; width:250px;}
+#bookInfo:hover{background-color: pink;}
+.img-content>ul>li{text-align: center;vertical-align: middle;float: left;margin: 10px}
